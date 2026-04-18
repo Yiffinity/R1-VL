@@ -93,6 +93,10 @@ Finally, use the following command to train the models.
 ```bash
 llamafactory-cli train examples/train_full/qwen2vl_2b_full_sft.yaml
 ```
+单卡：
+```bash
+CUDA_VISIBLE_DEVICES=0 FORCE_TORCHRUN=1 llamafactory-cli train examples/train_full/qwen2vl_2b_full_sft.yaml
+```
 Please refer to [this folder](https://github.com/jingyi0000/R1-VL/tree/main/sft) for the training parameters used in the SFT warm-up stage.
 
 ### RL with StepGRPO
